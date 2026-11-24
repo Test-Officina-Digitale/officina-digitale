@@ -1,8 +1,5 @@
 /**
  * Calcolo delle fatture di Officina Digitale.
- *
- * Attenzione: qui dentro c'e' un difetto voluto. Lo sconto viene calcolato
- * ma non viene sottratto dal totale. E' il primo lavoro del percorso.
  */
 
 const IVA = 0.22;
@@ -29,8 +26,7 @@ function calcolaTotale(righe, percentualeSconto = 0) {
 
   const sconto = calcolaSconto(imponibile, percentualeSconto);
 
-  // Il difetto e' qui: lo sconto viene calcolato e poi ignorato.
-  const imponibileScontato = imponibile;
+  const imponibileScontato = imponibile - sconto;
 
   const iva = imponibileScontato * IVA;
 
