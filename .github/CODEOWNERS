@@ -1,0 +1,22 @@
+# Responsabili di zona.
+
+# Regola di riserva: se nessuna riga piu' specifica corrisponde, vale questa.
+*                       @francescoexp
+
+# Calcolo delle fatture: la parte che tocca i soldi.
+/src/fatture.js         @Test-Officina-Digitale/prodotto
+/test/                  @Test-Officina-Digitale/prodotto
+
+# Anagrafica clienti.
+/src/clienti.js         @Test-Officina-Digitale/prodotto
+
+# Listino prezzi: lo decide il commerciale, non chi scrive codice.
+/listino.csv            @Test-Officina-Digitale/commerciale
+
+# Documenti aziendali.
+/docs/                  @francescoexp
+/TEAM.md                @francescoexp
+
+# Sicurezza e automazioni.
+/SECURITY.md            @francescoexp
+/.github/workflows/     @francescoexp
